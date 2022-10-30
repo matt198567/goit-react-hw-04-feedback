@@ -43,7 +43,7 @@ export const Feedback = () => {
     <>
       <Section title={'Please leave your feedback'}>
         <FeedbackOptions
-          options={['good', 'neutral', 'bad']}
+          options={Object.keys({ good, neutral, bad })}
           onLeaveFeedback={addFeedback}
         />
       </Section>
